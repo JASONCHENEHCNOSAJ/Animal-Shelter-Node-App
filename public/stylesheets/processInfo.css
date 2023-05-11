@@ -1,0 +1,130 @@
+html {
+    font-size: 12px;
+    font-family: 'Assistant', sans-serif;
+   
+}
+
+body {
+    background-image: url("../images/happy dog background.jpg");
+    background-size:100%;
+    background-color: rgb(210, 224, 238);
+
+}
+
+h2 {
+    
+    font-size: 4rem;
+    text-align: center;
+}
+
+h4 {
+    font-size:  2rem;
+    margin-left: 2rem;
+}
+input[type=submit], input[type=reset] {
+    margin-left: 3rem;
+    border-radius: 20px;
+    width: 15rem;
+    height: 5rem;
+    background-color:rgba(180, 240, 233, 0.438);
+    font-size: large;
+    text-decoration: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: rgba(235,103,103,255);
+    color: white;
+    
+}
+
+input[type=submit]:active, input[type=reset]:active {
+    transition: 0.2s;
+    background-color: rgb(210, 224, 238);
+    color: black;
+}
+
+form {
+   margin-top: 3rem;
+   margin-left: 1rem;
+}
+a {
+    text-decoration: none;
+}
+
+select {
+    width: 20%;
+  padding: 16px 20px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+input[type="text"], input[type="number"] {
+    height: 3rem;
+    border-radius: 4px;
+
+}
+
+textarea {
+    border-radius: 4px;
+}
+
+img {
+    margin-left:25rem;
+    padding: 16px 20px;
+}
+
+table {
+    margin: auto;
+    font-size: 1.5rem;
+    width: 60%;
+    text-align: center;
+}
+#home {
+    margin-left: 2rem;
+    text-decoration: underline;
+}
+#bulldog {
+    width:10rem;
+    float: right;
+    margin-right: 3.9rem;
+    padding: 1px;
+    margin-top: -3rem;
+}
+#content {
+    border: 1rem double rgba(180, 240, 233, 0.438);
+    background-color: aliceblue;
+    width: 60rem;
+    height: 60vh;
+    margin: auto;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+#content:hover {
+    opacity: 1;
+}
+
+
+
+#motto {
+ font-family: 'Goblin One', cursive;
+ font-size: larger;
+}
+.introtext {
+    font-size: large;
+    width: 95%;
+    margin: auto;
+}
+
+.buttonarea {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.griditem {
+    height: 5rem;
+    width: 20rem;
+}

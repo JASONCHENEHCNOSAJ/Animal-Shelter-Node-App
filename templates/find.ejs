@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="\stylesheets\adopt.css">
+    <title>Adopt Animal</title>
+</head>
+<body>
+    <div id="content">
+ 
+         <h2> Surrender a Pet</h2>
+         <hr>
+         <form onsubmit="return confirm('Are you sure you want to submit your application? \nYou will not be able to change your information once submitted.')" action="http://localhost:<%= port %>/processSurrenderApplication" method="post">
+           
+    
+             <label for="name"> <b>Name: </b>  </label>
+             <input type="text" id="name" name="name" required>
+    <br><br>
+
+             <label for="gender" id="gender"><b> Gender: </b></label>
+<label for="male"> Male </label>
+             <input type="radio" id="male" name="gender" value="Male" required>
+              <label for="Female">Female</label>
+             <input type="radio" id="female" name="gender" value="Female" required>
+        
+
+                <br> <br>
+
+             <label for="pets"> <strong>  Species:  </strong>  </label>
+  <select name="pets" id="pets">
+    
+      <option value="Dog">Dog</option>
+      <option value="Cat">Cat</option>
+      <option value="Lizard">Lizard</option>
+      <option value="Panda">Panda</option>
+      <option value="Rabbit">Rabbit</option>
+  </select>
+
+<br> <br>
+            <label for="age"> <b>Age: </b>  </label>
+             <input type="number" id="age" name="age" min="1" value="1" required>
+    <br>
+
+             <br>
+             <label for="background"><b> Additional Information:</b></label> <br>
+             <textarea name="background" id="background" cols="70" rows="5"></textarea>
+       
+            <br> <br>
+             <input type="reset" value="Reset">
+             <input type="submit" value="Submit Application">
+           </form>
+ 
+           <br>
+           <a id="home" href="/">HOME</a>
+ 
+    </div>
+
+ </body>
+</html>
